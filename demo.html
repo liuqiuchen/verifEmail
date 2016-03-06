@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>AngularJS验证用户输入的邮箱</title>
+</head>
+<body>
+
+
+<!-- 验证用户输入的邮箱 -->
+<form action="" ng-app="" name="myForm">
+    <!-- ng-model 指令可以将输入域的值与 AngularJS 创建的变量绑定。 -->
+    Email: <input type="email" name="myEmail" ng-model="text"/>
+    <!-- 当ng-show='true'，才显示span -->
+    <span ng-show="myForm.myEmail.$error.email">请输入正确的邮箱</span>
+</form>
+
+<!-- 引入AngularJS -->
+<script src="angular.min.js"></script>
+
+
+</body>
+</html>
